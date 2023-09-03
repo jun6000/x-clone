@@ -3,8 +3,14 @@ import "../styles/MainPanel.css";
 export default function MainPanel() {
     return (
         <div className="mainPanel">
-            <h2>Home</h2>
-            <p>Hey there!</p>
+            <p className="header">Home</p>
+            <div className="feedCategories">
+                <div className="feedCategory">For you</div>
+                <div className="feedCategory">Following</div>
+            </div>
+            <div className="writePost">
+                hello
+            </div>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-html, body {
+html, body, #root {
     margin: 0;
     height: 100%;
     background-color: black;
@@ -6,116 +6,8 @@ html, body {
     color: white;
 }
 
-.logo {
-    margin: 0.1rem;
-    padding: 0.8rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-    width: fit-content;
-    border-radius: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.logo:hover {
-    background-color: #1a1a1a;
-}
-
-.sidePanel {
-    width: 14rem;
-}
-
-.sideButtons {
-    margin: 0.5rem;
+.app {
     display: flex;
-    flex-direction: column;
-    font-size: 1.25rem;
-}
-
-.sideMember {
-    margin: 0.1rem;
-    border-radius: 2rem;
-    padding: 1rem;
-    width: fit-content;
-}
-
-.sideMember:hover {
-    background-color: #101010;
-    filter: brightness(1.5);
-}
-
-.postButton {
-    margin: 1rem;
-    margin-top: 0;
-    border: 0;
-    border-radius: 2rem;
-    padding: 1rem;
-    background-color: #1a8bd8;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    width: 100%;
-}
-
-.postButton:hover {
-    filter: brightness(0.9);
-}
-
-.accountButton {
-    display: grid;
-    margin: 1rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    border-radius: 3rem;
-    width: 100%;
-    font-size: 1.1rem;
-}
-
-.accountButton:hover {
-    background-color: #1a1a1a;
-}
-
-.userPfp {
-    margin: 0.4rem;
-    margin-left: 0.8rem;
-    margin-right: 0;
-    border-radius: 1.5rem;
-    width: 3rem;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.userName {
-    display: flex;
-    padding-left: 0.2rem;
-    align-items: end;
-    justify-content: left;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    font-weight: bold;
-}
-
-.userHandle {
-    display: flex;
-    align-items: start;
-    justify-content: left;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    filter: brightness(0.5);
-}
-
-.accountOptions {
-    display: flex;
-    align-items: center;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    font-weight: bold;
+    justify-content: center;
+    height: 100%;
 }

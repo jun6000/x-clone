@@ -1,2 +1,36 @@
 .mainPanel {
+    display: flex;
+    flex-flow: column;
+    margin: 0 1rem 0 1rem;
+    border-left: 0.1rem solid #2a2e31;
+    border-right: 0.1rem solid #2a2e31;
+    width: 35rem;
+}
+
+.header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.feedCategories {
+    display: flex;
+    flex-flow: row;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 4rem;
+}
+
+.feedCategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.feedCategory:hover {
+    background-color: #1a1a1a;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: #1a8bd8;
 }
