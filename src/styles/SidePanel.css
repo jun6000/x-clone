@@ -16,13 +16,12 @@
 }
 
 .logo {
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 2rem;
-    padding: 0.5rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    font-size: 2rem;
-    font-weight: bold;
+    padding: 0.5rem 0 0.5rem 0;
+    width: fit-content;
 }
 
 .logo:hover {
@@ -32,13 +31,17 @@
 .navMember {
     border-radius: 2rem;
     padding: 0.75rem;
-    padding-left: 1.5rem;
     padding-right: 1.5rem;
     width: fit-content;
 }
 
 .navMember:hover {
     background-color: #1a1a1a;
+}
+
+.navIcon {
+    margin-right: 1rem;
+    vertical-align: text-bottom;
 }
 
 .postButton {
@@ -70,15 +73,6 @@
 
 .accountButton:hover {
     background-color: #1a1a1a;
-}
-
-.userPfp {
-    border-radius: 1rem;
-    width: 2.5rem;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 
 .userName {

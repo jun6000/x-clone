@@ -18,6 +18,7 @@
     flex-flow: row;
     font-size: 1rem;
     font-weight: bold;
+    border-bottom: 0.1rem solid #2a2e31;
     height: 4rem;
 }
 
@@ -33,4 +34,53 @@
     text-decoration: underline;
     text-decoration-thickness: 0.2rem;
     text-decoration-color: #1a8bd8;
+}
+
+.createPost {
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    margin: 1rem;
+    user-select: none;
+}
+
+.writePost {
+    border: 0;
+    background: 0;
+    width: 100%;
+    outline: 0;
+    font-size: 1.25rem;
+    color: white;
+}
+
+::placeholder {
+    font-size: 1.25rem;
+}
+
+.postBar {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    border-bottom: 0.1rem solid #2a2e31;
+    padding-bottom: 0.5rem;
+}
+
+.postOptions {
+    margin-left: 3.75rem;
+    display: flex;
+    gap: 1rem;
+    transform: scale(0.9);
+}
+
+.smallerPostButton {
+    margin-right: 1.5rem;
+    border: 0;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+    border-radius: 2rem;
+    background-color: #1a8bd8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    filter: brightness(0.5);
+    width: fit-content;
 }
