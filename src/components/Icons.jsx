@@ -14,6 +14,7 @@ import poll from "../assets/icons/poll.svg";
 import profile from "../assets/icons/profile.svg";
 import profileOptions from "../assets/icons/profileOptions.svg";
 import schedule from "../assets/icons/schedule.svg";
+import search from "../assets/icons/search.svg";
 import verified from "../assets/icons/verified.svg";
 import xLogo from "../assets/icons/xLogo.svg";
 
@@ -34,6 +35,7 @@ const SVG = {
     profile,
     profileOptions,
     schedule,
+    search,
     verified,
     xLogo
 };

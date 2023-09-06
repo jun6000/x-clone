@@ -1,0 +1,68 @@
+.otherPanel {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 20rem;
+}
+
+.searchBar {
+    display: flex;
+    gap: 1rem;
+    background-color: #1d1f23;
+    border-radius: 2rem;
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.7rem 1.25rem;
+    user-select: none;
+}
+
+.searchIcon {
+    height: 18px;
+    vertical-align: text-bottom;
+}
+
+.searchField {
+    background-color: #152023;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+}
+
+.searchField::placeholder {
+    font-size: 1rem;
+}
+
+.premiumAd {
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0.75rem;
+    background-color: #15171b;
+    color: white;
+}
+
+.adTitle {
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.adBody {
+    padding-bottom: 0.75rem;
+    font-weight: bold;
+}
+
+.subscribeButton {
+    border: 0;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+    border-radius: 2rem;
+    background-color: #1a8bd8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: fit-content;
+    user-select: none;
+}

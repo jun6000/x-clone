@@ -53,7 +53,7 @@
     color: white;
 }
 
-::placeholder {
+.writePost::placeholder {
     font-size: 1.25rem;
 }
 
