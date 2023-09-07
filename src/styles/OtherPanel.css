@@ -57,7 +57,7 @@
 
 .subscribeButton {
     border: 0;
-    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+    padding: 0.6rem 0.9rem 0.6rem 0.9rem;
     border-radius: 2rem;
     background-color: #1a8bd8;
     color: white;
@@ -65,4 +65,28 @@
     font-weight: bold;
     width: fit-content;
     user-select: none;
+}
+
+.trendingPanel {
+    border-radius: 1rem;
+    background-color: #15171b;
+    width: 22rem;
+}
+
+.trendingHeader {
+    margin: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.trendingFooter {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #1a8bd8;
+}
+
+.trendingFooter:hover {
+    background-color: #1c1e21;
 }

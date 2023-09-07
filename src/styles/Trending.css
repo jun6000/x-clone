@@ -1,0 +1,26 @@
+.trendingMember {
+    padding: 1rem;
+}
+
+.trendingMember:hover {
+    background-color: #1c1e21;
+}
+
+.trendingDetails {
+    font-size: 0.8rem;
+    filter: brightness(0.5);
+}
+
+.trendingTitle {
+    padding-top: 0.2rem;
+    padding-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.optionsButton {
+    position: relative;
+    float: right;
+    right: 0.2rem;
+    font-weight: bold;
+    filter: brightness(0.5);
+}
