@@ -52,8 +52,10 @@ export default function SidePanel({ pfp }) {
             <button className="postButton">Post</button>
             <div className="accountButton">
                 <img className="userPfp" src={pfp} />
-                <div className="userName">Username</div>
-                <div className="userHandle">@userhandle</div>
+                <div className="userDetails">
+                    <div className="userName">Username</div>
+                    <div className="userHandle">@userhandle</div>
+                </div>
                 <div className="accountOptions">⋯</div>
             </div>
         </div>

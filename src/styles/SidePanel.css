@@ -62,11 +62,12 @@
 .accountButton {
     margin-top: auto;
     margin-bottom: 0.5rem;
-    display: grid;
+    display: flex;
+    gap: 0.8rem;
     border-radius: 3rem;
-    padding: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0;
+    padding: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     width: 100%;
     font-size: 1rem;
 }
@@ -79,10 +80,6 @@
     display: flex;
     align-items: end;
     justify-content: left;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
     font-weight: bold;
 }
 
@@ -90,19 +87,12 @@
     display: flex;
     align-items: start;
     justify-content: left;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
     filter: brightness(0.5);
 }
 
 .accountOptions {
+    margin-left: auto;
     display: flex;
     align-items: center;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
     font-weight: bold;
 }
