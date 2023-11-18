@@ -78,6 +78,10 @@
     transform: scale(0.9);
 }
 
+.postOptions img:hover {
+    filter: brightness(0.8);
+}
+
 .smallerPostButton {
     margin-right: 1.5rem;
     border: 0;

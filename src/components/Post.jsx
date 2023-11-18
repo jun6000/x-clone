@@ -1,13 +1,21 @@
 import Icons from "./Icons";
 import "../styles/Post.css";
+import { useState } from 'react';
 
 export default function Post({ pfp, userName, userHandle, time, contentText, contentImage, comments, retweets, likes, views }) {
+    const [like, setLike] = useState(false);
+
+    const toggleLike = () => {
+        setLike(!like);
+    };
+
     return (
         <div className="postContainer">
             <div className="pfpPanel">
                 <img className="userPfp" src={pfp} />
             </div>
             <div className="postContent">
+                <div className="optionsButton">⋯</div>
                 <span className="posterName">
                     {userName}
                 </span>
@@ -28,9 +36,18 @@ export default function Post({ pfp, userName, userHandle, time, contentText, con
                         <img src={Icons.retweets} />
                         {retweets}
                     </div>
-                    <div className="postStatButton likeButton">
-                        <img src={Icons.like} />
-                        {likes}
+                    <div className="postStatButton likeButton" onClick={toggleLike} >
+                        {like ? (
+                            <>
+                                <img src={Icons.likePink} />
+                                <span className="likesCount" style= {{color:"hotpink"}} >{likes}</span>
+                            </>
+                        ) : (
+                            <>
+                                <img src={Icons.like} />
+                                {likes}
+                            </>
+                        )}
                     </div>
                     <div className="postStatButton viewsButton">
                         <img src={Icons.views} />

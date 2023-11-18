@@ -1,7 +1,14 @@
 import "../styles/SidePanel.css";
 import Icons from "./Icons";
+import { useState } from 'react';
 
 export default function SidePanel({ pfp }) {
+    const [showPopup, setShowPopup] = useState(false);
+
+    const togglePopup = () => {
+        setShowPopup(!showPopup);
+    };
+
     return (
         <div className="sidePanel">
             <div className="navMembers">
@@ -50,7 +57,7 @@ export default function SidePanel({ pfp }) {
                 </div>
             </div>
             <button className="postButton">Post</button>
-            <div className="accountButton">
+            <div className="accountButton" onClick={togglePopup} >
                 <img className="userPfp" src={pfp} />
                 <div className="userDetails">
                     <div className="userName">Username</div>
@@ -58,6 +65,12 @@ export default function SidePanel({ pfp }) {
                 </div>
                 <div className="accountOptions">⋯</div>
             </div>
+            {showPopup && (
+                <div className="accountPopup">
+                    <div>Add an existing account</div>
+                    <div>Log out @userhandle</div>
+                </div>
+            )}
         </div>
     );
 }

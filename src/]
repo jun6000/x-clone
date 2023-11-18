@@ -79,29 +79,10 @@
 .accountPopup {
      position: absolute;
      border: 0.1rem solid #2a2e31;
-     padding-top: 0.8rem;
-     padding-bottom: 0.8rem;
      border-radius: 1rem;
-     box-shadow: 
-        0 0 0.1rem rgba(255, 255, 255, 0.5),
-        0 0 0.5rem rgba(255, 255, 255, 0.2),
-        0 0 1rem rgba(255, 255, 255, 0.1),
-        0 0 5rem rgba(255, 255, 255, 0.01),
-        0 0 10rem rgba(255, 255, 255, 0.005);
-     left: 16rem;
-     bottom: 5.5rem;
-     width: 19rem;
-     background-color: black;
-}
-
-.accountPopup div {
-    padding: 0.8rem;
-    padding-left: 1rem;
-    font-weight: bold;
-}
-
-.accountPopup div:hover {
-    background-color: #1a1a1a;
+     box-shadow: 0.25rem 0.25rem #2a2e31;
+     left: 15rem;
+     bottom: 5rem;
 }
 
 .userName {

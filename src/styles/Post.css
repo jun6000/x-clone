@@ -6,6 +6,18 @@
     padding: 0.8rem;
 }
 
+.optionsButton {
+    position: relative;
+    float: right;
+    right: 0.2rem;
+    font-weight: bold;
+    filter: brightness(0.5);
+}
+
+.pfpPanel {
+    user-select: none;
+}
+
 .posterName {
     font-weight: bold;
 }
@@ -13,6 +25,7 @@
 .verifiedImage {
     transform: scale(0.9);
     vertical-align: middle;
+    user-select: none;
 }
 
 .posterHandleTime {
@@ -33,6 +46,7 @@
     border: 0.1rem solid #2a2e31;
     max-width: 29.7rem;
     height: auto;
+    user-select: none;
 }
 
 .postStats {
@@ -40,6 +54,7 @@
     flex-flow: row;
     margin-top: 0.4rem;
     justify-content: space-between;
+    user-select: none;
 }
 
 .postStatButton {
@@ -50,6 +65,18 @@
 .postStatButton img {
     transform: scale(0.8);
     vertical-align: middle;
+}
+
+.commentsButton:hover, .viewsButton:hover, .shareButton:hover, .bookmarkButton:hover {
+    filter: sepia(200%) hue-rotate(180deg) saturate(400%);
+}
+
+.retweetsButton:hover {
+    filter: sepia(300%) hue-rotate(90deg) saturate(400%);
+}
+
+.likeButton:hover {
+    filter: sepia(200%) hue-rotate(270deg) saturate(400%);
 }
 
 .shareBookmark {
