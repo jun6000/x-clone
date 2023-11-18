@@ -1,10 +1,15 @@
 .mainPanel {
     display: flex;
     flex-flow: column;
+    overflow-y: scroll;
     margin: 0 1rem 0 1rem;
     border-left: 0.1rem solid #2a2e31;
     border-right: 0.1rem solid #2a2e31;
     width: 35rem;
+}
+
+.mainPanel::-webkit-scrollbar {
+    display: none;
 }
 
 .header {
@@ -26,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.5rem;
     width: 100%;
 }
 
